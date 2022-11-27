@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page_one</title>
+    <style>
+            .box {
+        background-color: blue;
+        width: 200px;
+        height: 200px;
+        border: 2px solid black;
+        margin: auto;
+        display: inline-block;
+    }
+    /* css style in html */
+    </style>
+</head>
+<body>
+    <h1 style="text-align:center;">Welcome!</h1>
+    {% for i in range (0,num) %}
+    <div class="box"style="background-color: {{color}}"></div>
+    {% endfor %}
+    <!-- ! creates a for loop for the number and color in page -->
+</body>
+</html>
